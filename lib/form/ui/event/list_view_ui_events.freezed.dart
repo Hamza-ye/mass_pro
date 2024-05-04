@@ -46,7 +46,6 @@ mixin _$ListViewUiEvents {
     required TResult Function(FieldUiModel field) openOptionSetDialog,
   }) =>
       throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String uid, int year, int month, int day)?
@@ -76,7 +75,6 @@ mixin _$ListViewUiEvents {
     TResult? Function(FieldUiModel field)? openOptionSetDialog,
   }) =>
       throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String uid, int year, int month, int day)?
@@ -106,7 +104,6 @@ mixin _$ListViewUiEvents {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(OpenYearMonthDayAgeCalendar value)
@@ -127,7 +124,6 @@ mixin _$ListViewUiEvents {
     required TResult Function(OpenOptionSetDialog value) openOptionSetDialog,
   }) =>
       throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(OpenYearMonthDayAgeCalendar value)?
@@ -147,7 +143,6 @@ mixin _$ListViewUiEvents {
     TResult? Function(OpenOptionSetDialog value)? openOptionSetDialog,
   }) =>
       throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(OpenYearMonthDayAgeCalendar value)?
@@ -184,7 +179,6 @@ class _$ListViewUiEventsCopyWithImpl<$Res, $Val extends ListViewUiEvents>
 
   // ignore: unused_field
   final $Val _value;
-
   // ignore: unused_field
   final $Res Function($Val) _then;
 }
@@ -195,7 +189,6 @@ abstract class _$$OpenYearMonthDayAgeCalendarCopyWith<$Res> {
           _$OpenYearMonthDayAgeCalendar value,
           $Res Function(_$OpenYearMonthDayAgeCalendar) then) =
       __$$OpenYearMonthDayAgeCalendarCopyWithImpl<$Res>;
-
   @useResult
   $Res call({String uid, int year, int month, int day});
 }
@@ -474,17 +467,12 @@ abstract class OpenYearMonthDayAgeCalendar extends ListViewUiEvents {
       required final int year,
       required final int month,
       required final int day}) = _$OpenYearMonthDayAgeCalendar;
-
   const OpenYearMonthDayAgeCalendar._() : super._();
 
   String get uid;
-
   int get year;
-
   int get month;
-
   int get day;
-
   @JsonKey(ignore: true)
   _$$OpenYearMonthDayAgeCalendarCopyWith<_$OpenYearMonthDayAgeCalendar>
       get copyWith => throw _privateConstructorUsedError;
@@ -495,7 +483,6 @@ abstract class _$$OpenCustomCalendarCopyWith<$Res> {
   factory _$$OpenCustomCalendarCopyWith(_$OpenCustomCalendar value,
           $Res Function(_$OpenCustomCalendar) then) =
       __$$OpenCustomCalendarCopyWithImpl<$Res>;
-
   @useResult
   $Res call(
       {String uid,
@@ -793,19 +780,13 @@ abstract class OpenCustomCalendar extends ListViewUiEvents {
       final DateTime? date,
       required final bool allowFutureDates,
       final bool? isDateTime}) = _$OpenCustomCalendar;
-
   const OpenCustomCalendar._() : super._();
 
   String get uid;
-
   String get label;
-
   DateTime? get date;
-
   bool get allowFutureDates;
-
   bool? get isDateTime;
-
   @JsonKey(ignore: true)
   _$$OpenCustomCalendarCopyWith<_$OpenCustomCalendar> get copyWith =>
       throw _privateConstructorUsedError;
@@ -816,7 +797,6 @@ abstract class _$$OpenTimePickerCopyWith<$Res> {
   factory _$$OpenTimePickerCopyWith(
           _$OpenTimePicker value, $Res Function(_$OpenTimePicker) then) =
       __$$OpenTimePickerCopyWithImpl<$Res>;
-
   @useResult
   $Res call({String uid, String label, DateTime? date, bool? isDateTime});
 }
@@ -1093,17 +1073,12 @@ abstract class OpenTimePicker extends ListViewUiEvents {
       required final String label,
       final DateTime? date,
       final bool? isDateTime}) = _$OpenTimePicker;
-
   const OpenTimePicker._() : super._();
 
   String get uid;
-
   String get label;
-
   DateTime? get date;
-
   bool? get isDateTime;
-
   @JsonKey(ignore: true)
   _$$OpenTimePickerCopyWith<_$OpenTimePicker> get copyWith =>
       throw _privateConstructorUsedError;
@@ -1115,7 +1090,6 @@ abstract class _$$ShowDescriptionLabelDialogCopyWith<$Res> {
           _$ShowDescriptionLabelDialog value,
           $Res Function(_$ShowDescriptionLabelDialog) then) =
       __$$ShowDescriptionLabelDialogCopyWithImpl<$Res>;
-
   @useResult
   $Res call({String title, String? message});
 }
@@ -1368,13 +1342,10 @@ class _$ShowDescriptionLabelDialog extends ShowDescriptionLabelDialog
 abstract class ShowDescriptionLabelDialog extends ListViewUiEvents {
   const factory ShowDescriptionLabelDialog(
       final String title, final String? message) = _$ShowDescriptionLabelDialog;
-
   const ShowDescriptionLabelDialog._() : super._();
 
   String get title;
-
   String? get message;
-
   @JsonKey(ignore: true)
   _$$ShowDescriptionLabelDialogCopyWith<_$ShowDescriptionLabelDialog>
       get copyWith => throw _privateConstructorUsedError;
@@ -1385,7 +1356,6 @@ abstract class _$$RequestCurrentLocationCopyWith<$Res> {
   factory _$$RequestCurrentLocationCopyWith(_$RequestCurrentLocation value,
           $Res Function(_$RequestCurrentLocation) then) =
       __$$RequestCurrentLocationCopyWithImpl<$Res>;
-
   @useResult
   $Res call({String uid});
 }
@@ -1628,11 +1598,9 @@ class _$RequestCurrentLocation extends RequestCurrentLocation
 abstract class RequestCurrentLocation extends ListViewUiEvents {
   const factory RequestCurrentLocation({required final String uid}) =
       _$RequestCurrentLocation;
-
   const RequestCurrentLocation._() : super._();
 
   String get uid;
-
   @JsonKey(ignore: true)
   _$$RequestCurrentLocationCopyWith<_$RequestCurrentLocation> get copyWith =>
       throw _privateConstructorUsedError;
@@ -1643,7 +1611,6 @@ abstract class _$$RequestLocationByMapCopyWith<$Res> {
   factory _$$RequestLocationByMapCopyWith(_$RequestLocationByMap value,
           $Res Function(_$RequestLocationByMap) then) =
       __$$RequestLocationByMapCopyWithImpl<$Res>;
-
   @useResult
   $Res call({String uid, FeatureType featureType, String? value});
 }
@@ -1909,15 +1876,11 @@ abstract class RequestLocationByMap extends ListViewUiEvents {
       {required final String uid,
       required final FeatureType featureType,
       final String? value}) = _$RequestLocationByMap;
-
   const RequestLocationByMap._() : super._();
 
   String get uid;
-
   FeatureType get featureType;
-
   String? get value;
-
   @JsonKey(ignore: true)
   _$$RequestLocationByMapCopyWith<_$RequestLocationByMap> get copyWith =>
       throw _privateConstructorUsedError;
@@ -1928,7 +1891,6 @@ abstract class _$$ScanQRCodeCopyWith<$Res> {
   factory _$$ScanQRCodeCopyWith(
           _$ScanQRCode value, $Res Function(_$ScanQRCode) then) =
       __$$ScanQRCodeCopyWithImpl<$Res>;
-
   @useResult
   $Res call({String uid, String? optionSet, UiRenderType? renderingType});
 }
@@ -2191,15 +2153,11 @@ abstract class ScanQRCode extends ListViewUiEvents {
       {required final String uid,
       final String? optionSet,
       final UiRenderType? renderingType}) = _$ScanQRCode;
-
   const ScanQRCode._() : super._();
 
   String get uid;
-
   String? get optionSet;
-
   UiRenderType? get renderingType;
-
   @JsonKey(ignore: true)
   _$$ScanQRCodeCopyWith<_$ScanQRCode> get copyWith =>
       throw _privateConstructorUsedError;
@@ -2210,7 +2168,6 @@ abstract class _$$DisplayQRCodeCopyWith<$Res> {
   factory _$$DisplayQRCodeCopyWith(
           _$DisplayQRCode value, $Res Function(_$DisplayQRCode) then) =
       __$$DisplayQRCodeCopyWithImpl<$Res>;
-
   @useResult
   $Res call(
       {String uid,
@@ -2505,19 +2462,13 @@ abstract class DisplayQRCode extends ListViewUiEvents {
       required final String value,
       final UiRenderType? renderingType,
       required final bool editable}) = _$DisplayQRCode;
-
   const DisplayQRCode._() : super._();
 
   String get uid;
-
   String? get optionSet;
-
   String get value;
-
   UiRenderType? get renderingType;
-
   bool get editable;
-
   @JsonKey(ignore: true)
   _$$DisplayQRCodeCopyWith<_$DisplayQRCode> get copyWith =>
       throw _privateConstructorUsedError;
@@ -2528,7 +2479,6 @@ abstract class _$$OpenOrgUnitDialogCopyWith<$Res> {
   factory _$$OpenOrgUnitDialogCopyWith(
           _$OpenOrgUnitDialog value, $Res Function(_$OpenOrgUnitDialog) then) =
       __$$OpenOrgUnitDialogCopyWithImpl<$Res>;
-
   @useResult
   $Res call({String uid, String label, String? value});
 }
@@ -2791,15 +2741,11 @@ abstract class OpenOrgUnitDialog extends ListViewUiEvents {
       {required final String uid,
       required final String label,
       final String? value}) = _$OpenOrgUnitDialog;
-
   const OpenOrgUnitDialog._() : super._();
 
   String get uid;
-
   String get label;
-
   String? get value;
-
   @JsonKey(ignore: true)
   _$$OpenOrgUnitDialogCopyWith<_$OpenOrgUnitDialog> get copyWith =>
       throw _privateConstructorUsedError;
@@ -2810,7 +2756,6 @@ abstract class _$$AddImageCopyWith<$Res> {
   factory _$$AddImageCopyWith(
           _$AddImage value, $Res Function(_$AddImage) then) =
       __$$AddImageCopyWithImpl<$Res>;
-
   @useResult
   $Res call({String uid});
 }
@@ -3048,11 +2993,9 @@ class _$AddImage extends AddImage with DiagnosticableTreeMixin {
 
 abstract class AddImage extends ListViewUiEvents {
   const factory AddImage(final String uid) = _$AddImage;
-
   const AddImage._() : super._();
 
   String get uid;
-
   @JsonKey(ignore: true)
   _$$AddImageCopyWith<_$AddImage> get copyWith =>
       throw _privateConstructorUsedError;
@@ -3063,7 +3006,6 @@ abstract class _$$ShowImageCopyWith<$Res> {
   factory _$$ShowImageCopyWith(
           _$ShowImage value, $Res Function(_$ShowImage) then) =
       __$$ShowImageCopyWithImpl<$Res>;
-
   @useResult
   $Res call({String label, String value});
 }
@@ -3312,13 +3254,10 @@ class _$ShowImage extends ShowImage with DiagnosticableTreeMixin {
 abstract class ShowImage extends ListViewUiEvents {
   const factory ShowImage(
       {required final String label, required final String value}) = _$ShowImage;
-
   const ShowImage._() : super._();
 
   String get label;
-
   String get value;
-
   @JsonKey(ignore: true)
   _$$ShowImageCopyWith<_$ShowImage> get copyWith =>
       throw _privateConstructorUsedError;
@@ -3329,7 +3268,6 @@ abstract class _$$CopyToClipboardCopyWith<$Res> {
   factory _$$CopyToClipboardCopyWith(
           _$CopyToClipboard value, $Res Function(_$CopyToClipboard) then) =
       __$$CopyToClipboardCopyWithImpl<$Res>;
-
   @useResult
   $Res call({String? value});
 }
@@ -3568,11 +3506,9 @@ class _$CopyToClipboard extends CopyToClipboard with DiagnosticableTreeMixin {
 
 abstract class CopyToClipboard extends ListViewUiEvents {
   const factory CopyToClipboard({final String? value}) = _$CopyToClipboard;
-
   const CopyToClipboard._() : super._();
 
   String? get value;
-
   @JsonKey(ignore: true)
   _$$CopyToClipboardCopyWith<_$CopyToClipboard> get copyWith =>
       throw _privateConstructorUsedError;
@@ -3583,7 +3519,6 @@ abstract class _$$OpenOptionSetDialogCopyWith<$Res> {
   factory _$$OpenOptionSetDialogCopyWith(_$OpenOptionSetDialog value,
           $Res Function(_$OpenOptionSetDialog) then) =
       __$$OpenOptionSetDialogCopyWithImpl<$Res>;
-
   @useResult
   $Res call({FieldUiModel field});
 }
@@ -3825,11 +3760,9 @@ class _$OpenOptionSetDialog extends OpenOptionSetDialog
 abstract class OpenOptionSetDialog extends ListViewUiEvents {
   const factory OpenOptionSetDialog({required final FieldUiModel field}) =
       _$OpenOptionSetDialog;
-
   const OpenOptionSetDialog._() : super._();
 
   FieldUiModel get field;
-
   @JsonKey(ignore: true)
   _$$OpenOptionSetDialogCopyWith<_$OpenOptionSetDialog> get copyWith =>
       throw _privateConstructorUsedError;

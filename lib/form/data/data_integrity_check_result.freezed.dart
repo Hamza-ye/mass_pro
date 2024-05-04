@@ -43,7 +43,6 @@ mixin _$DataIntegrityCheckResult {
     required TResult Function() notSavedResult,
   }) =>
       throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(
@@ -71,7 +70,6 @@ mixin _$DataIntegrityCheckResult {
     TResult? Function()? notSavedResult,
   }) =>
       throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(
@@ -100,7 +98,6 @@ mixin _$DataIntegrityCheckResult {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(MissingMandatoryResult value)
@@ -113,7 +110,6 @@ mixin _$DataIntegrityCheckResult {
     required TResult Function(NotSavedResult value) notSavedResult,
   }) =>
       throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(MissingMandatoryResult value)? missingMandatoryResult,
@@ -123,7 +119,6 @@ mixin _$DataIntegrityCheckResult {
     TResult? Function(NotSavedResult value)? notSavedResult,
   }) =>
       throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(MissingMandatoryResult value)? missingMandatoryResult,
@@ -151,7 +146,6 @@ class _$DataIntegrityCheckResultCopyWithImpl<$Res,
 
   // ignore: unused_field
   final $Val _value;
-
   // ignore: unused_field
   final $Res Function($Val) _then;
 }
@@ -161,7 +155,6 @@ abstract class _$$MissingMandatoryResultCopyWith<$Res> {
   factory _$$MissingMandatoryResultCopyWith(_$MissingMandatoryResult value,
           $Res Function(_$MissingMandatoryResult) then) =
       __$$MissingMandatoryResultCopyWithImpl<$Res>;
-
   @useResult
   $Res call(
       {IMap<String, String> mandatoryFields,
@@ -239,7 +232,6 @@ class _$MissingMandatoryResult
   final IList<FieldWithIssue> errorFields;
   @override
   final IList<FieldWithIssue> warningFields;
-
 // override
   @override
   @JsonKey()
@@ -456,16 +448,11 @@ abstract class MissingMandatoryResult implements DataIntegrityCheckResult {
       final bool allowDiscard}) = _$MissingMandatoryResult;
 
   IMap<String, String> get mandatoryFields;
-
   IList<FieldWithIssue> get errorFields;
-
   IList<FieldWithIssue> get warningFields; // override
   bool get canComplete;
-
   String? get onCompleteMessage;
-
   bool get allowDiscard;
-
   @JsonKey(ignore: true)
   _$$MissingMandatoryResultCopyWith<_$MissingMandatoryResult> get copyWith =>
       throw _privateConstructorUsedError;
@@ -476,7 +463,6 @@ abstract class _$$FieldsWithErrorResultCopyWith<$Res> {
   factory _$$FieldsWithErrorResultCopyWith(_$FieldsWithErrorResult value,
           $Res Function(_$FieldsWithErrorResult) then) =
       __$$FieldsWithErrorResultCopyWithImpl<$Res>;
-
   @useResult
   $Res call(
       {IMap<String, String> mandatoryFields,
@@ -554,7 +540,6 @@ class _$FieldsWithErrorResult
   final IList<FieldWithIssue> fieldUidErrorList;
   @override
   final IList<FieldWithIssue> warningFields;
-
 // override
   @override
   @JsonKey()
@@ -771,16 +756,11 @@ abstract class FieldsWithErrorResult implements DataIntegrityCheckResult {
       final bool allowDiscard}) = _$FieldsWithErrorResult;
 
   IMap<String, String> get mandatoryFields;
-
   IList<FieldWithIssue> get fieldUidErrorList;
-
   IList<FieldWithIssue> get warningFields; // override
   bool get canComplete;
-
   String? get onCompleteMessage;
-
   bool get allowDiscard;
-
   @JsonKey(ignore: true)
   _$$FieldsWithErrorResultCopyWith<_$FieldsWithErrorResult> get copyWith =>
       throw _privateConstructorUsedError;
@@ -791,7 +771,6 @@ abstract class _$$FieldsWithWarningResultCopyWith<$Res> {
   factory _$$FieldsWithWarningResultCopyWith(_$FieldsWithWarningResult value,
           $Res Function(_$FieldsWithWarningResult) then) =
       __$$FieldsWithWarningResultCopyWithImpl<$Res>;
-
   @useResult
   $Res call(
       {IList<FieldWithIssue> fieldUidWarningList,
@@ -851,7 +830,6 @@ class _$FieldsWithWarningResult
 
   @override
   final IList<FieldWithIssue> fieldUidWarningList;
-
 // override
   @override
   @JsonKey()
@@ -1059,11 +1037,8 @@ abstract class FieldsWithWarningResult implements DataIntegrityCheckResult {
 
   IList<FieldWithIssue> get fieldUidWarningList; // override
   bool get canComplete;
-
   String? get onCompleteMessage;
-
   bool get allowDiscard;
-
   @JsonKey(ignore: true)
   _$$FieldsWithWarningResultCopyWith<_$FieldsWithWarningResult> get copyWith =>
       throw _privateConstructorUsedError;
@@ -1074,7 +1049,6 @@ abstract class _$$SuccessfulResultCopyWith<$Res> {
   factory _$$SuccessfulResultCopyWith(
           _$SuccessfulResult value, $Res Function(_$SuccessfulResult) then) =
       __$$SuccessfulResultCopyWithImpl<$Res>;
-
   @useResult
   $Res call(
       {String? extraData,
@@ -1133,7 +1107,6 @@ class _$SuccessfulResult
 
   @override
   final String? extraData;
-
 // override
   @override
   @JsonKey()
@@ -1336,11 +1309,8 @@ abstract class SuccessfulResult implements DataIntegrityCheckResult {
 
   String? get extraData; // override
   bool get canComplete;
-
   String? get onCompleteMessage;
-
   bool get allowDiscard;
-
   @JsonKey(ignore: true)
   _$$SuccessfulResultCopyWith<_$SuccessfulResult> get copyWith =>
       throw _privateConstructorUsedError;

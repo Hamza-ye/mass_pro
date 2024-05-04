@@ -42,7 +42,7 @@ dependencies:
   rounded_loading_button: ^2.1.0
   percent_indicator: ^4.2.3
   d2_remote:
-    path: ./d2-remote
+    path: ../d2fsam-flutter-sdk
 
   # temp. Test dependencies
   # Replace later

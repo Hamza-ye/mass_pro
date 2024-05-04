@@ -17,9 +17,7 @@ final _privateConstructorUsedError = UnsupportedError(
 /// @nodoc
 mixin _$FieldMaskFailure {
   String get message => throw _privateConstructorUsedError;
-
   CaughtException? get cause => throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String message, CaughtException? cause)
@@ -28,7 +26,6 @@ mixin _$FieldMaskFailure {
         invalidPatternException,
   }) =>
       throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(String message, CaughtException? cause)?
@@ -37,7 +34,6 @@ mixin _$FieldMaskFailure {
         invalidPatternException,
   }) =>
       throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String message, CaughtException? cause)?
@@ -47,7 +43,6 @@ mixin _$FieldMaskFailure {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(WrongPatternException value)
@@ -56,14 +51,12 @@ mixin _$FieldMaskFailure {
         invalidPatternException,
   }) =>
       throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(WrongPatternException value)? wrongPatternException,
     TResult? Function(InvalidPatternException value)? invalidPatternException,
   }) =>
       throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(WrongPatternException value)? wrongPatternException,
@@ -82,7 +75,6 @@ abstract class $FieldMaskFailureCopyWith<$Res> {
   factory $FieldMaskFailureCopyWith(
           FieldMaskFailure value, $Res Function(FieldMaskFailure) then) =
       _$FieldMaskFailureCopyWithImpl<$Res, FieldMaskFailure>;
-
   @useResult
   $Res call({String message, CaughtException? cause});
 }
@@ -94,7 +86,6 @@ class _$FieldMaskFailureCopyWithImpl<$Res, $Val extends FieldMaskFailure>
 
   // ignore: unused_field
   final $Val _value;
-
   // ignore: unused_field
   final $Res Function($Val) _then;
 
@@ -123,7 +114,6 @@ abstract class _$$WrongPatternExceptionCopyWith<$Res>
   factory _$$WrongPatternExceptionCopyWith(_$WrongPatternException value,
           $Res Function(_$WrongPatternException) then) =
       __$$WrongPatternExceptionCopyWithImpl<$Res>;
-
   @override
   @useResult
   $Res call({String message, CaughtException? cause});
@@ -263,15 +253,12 @@ abstract class WrongPatternException extends FieldMaskFailure
   const factory WrongPatternException(
       [final String message,
       final CaughtException? cause]) = _$WrongPatternException;
-
   const WrongPatternException._() : super._();
 
   @override
   String get message;
-
   @override
   CaughtException? get cause;
-
   @override
   @JsonKey(ignore: true)
   _$$WrongPatternExceptionCopyWith<_$WrongPatternException> get copyWith =>
@@ -284,7 +271,6 @@ abstract class _$$InvalidPatternExceptionCopyWith<$Res>
   factory _$$InvalidPatternExceptionCopyWith(_$InvalidPatternException value,
           $Res Function(_$InvalidPatternException) then) =
       __$$InvalidPatternExceptionCopyWithImpl<$Res>;
-
   @override
   @useResult
   $Res call({String message, CaughtException? cause});
@@ -424,15 +410,12 @@ abstract class InvalidPatternException extends FieldMaskFailure
   const factory InvalidPatternException(
       [final String message,
       final CaughtException? cause]) = _$InvalidPatternException;
-
   const InvalidPatternException._() : super._();
 
   @override
   String get message;
-
   @override
   CaughtException? get cause;
-
   @override
   @JsonKey(ignore: true)
   _$$InvalidPatternExceptionCopyWith<_$InvalidPatternException> get copyWith =>

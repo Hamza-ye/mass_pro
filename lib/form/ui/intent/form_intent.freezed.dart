@@ -40,7 +40,6 @@ mixin _$FormIntent {
     required TResult Function(String uid) onCancelRequestCoordinates,
   }) =>
       throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? init,
@@ -64,7 +63,6 @@ mixin _$FormIntent {
     TResult? Function(String uid)? onCancelRequestCoordinates,
   }) =>
       throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? init,
@@ -89,7 +87,6 @@ mixin _$FormIntent {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(Init value) init,
@@ -111,7 +108,6 @@ mixin _$FormIntent {
         onCancelRequestCoordinates,
   }) =>
       throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(Init value)? init,
@@ -132,7 +128,6 @@ mixin _$FormIntent {
         onCancelRequestCoordinates,
   }) =>
       throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Init value)? init,
@@ -170,7 +165,6 @@ class _$FormIntentCopyWithImpl<$Res, $Val extends FormIntent>
 
   // ignore: unused_field
   final $Val _value;
-
   // ignore: unused_field
   final $Res Function($Val) _then;
 }
@@ -367,7 +361,6 @@ class _$Init extends Init {
 
 abstract class Init extends FormIntent {
   const factory Init() = _$Init;
-
   const Init._() : super._();
 }
 
@@ -376,7 +369,6 @@ abstract class _$$OnFinishCopyWith<$Res> {
   factory _$$OnFinishCopyWith(
           _$OnFinish value, $Res Function(_$OnFinish) then) =
       __$$OnFinishCopyWithImpl<$Res>;
-
   @useResult
   $Res call({String? extraData});
 }
@@ -593,11 +585,9 @@ class _$OnFinish extends OnFinish {
 
 abstract class OnFinish extends FormIntent {
   const factory OnFinish([final String? extraData]) = _$OnFinish;
-
   const OnFinish._() : super._();
 
   String? get extraData;
-
   @JsonKey(ignore: true)
   _$$OnFinishCopyWith<_$OnFinish> get copyWith =>
       throw _privateConstructorUsedError;
@@ -607,7 +597,6 @@ abstract class OnFinish extends FormIntent {
 abstract class _$$OnClearCopyWith<$Res> {
   factory _$$OnClearCopyWith(_$OnClear value, $Res Function(_$OnClear) then) =
       __$$OnClearCopyWithImpl<$Res>;
-
   @useResult
   $Res call({String? extraData});
 }
@@ -824,11 +813,9 @@ class _$OnClear extends OnClear {
 
 abstract class OnClear extends FormIntent {
   const factory OnClear([final String? extraData]) = _$OnClear;
-
   const OnClear._() : super._();
 
   String? get extraData;
-
   @JsonKey(ignore: true)
   _$$OnClearCopyWith<_$OnClear> get copyWith =>
       throw _privateConstructorUsedError;
@@ -838,7 +825,6 @@ abstract class OnClear extends FormIntent {
 abstract class _$$OnFocusCopyWith<$Res> {
   factory _$$OnFocusCopyWith(_$OnFocus value, $Res Function(_$OnFocus) then) =
       __$$OnFocusCopyWithImpl<$Res>;
-
   @useResult
   $Res call({String uid, String? value});
 }
@@ -1062,13 +1048,10 @@ class _$OnFocus extends OnFocus {
 
 abstract class OnFocus extends FormIntent {
   const factory OnFocus(final String uid, final String? value) = _$OnFocus;
-
   const OnFocus._() : super._();
 
   String get uid;
-
   String? get value;
-
   @JsonKey(ignore: true)
   _$$OnFocusCopyWith<_$OnFocus> get copyWith =>
       throw _privateConstructorUsedError;
@@ -1078,7 +1061,6 @@ abstract class OnFocus extends FormIntent {
 abstract class _$$OnNextCopyWith<$Res> {
   factory _$$OnNextCopyWith(_$OnNext value, $Res Function(_$OnNext) then) =
       __$$OnNextCopyWithImpl<$Res>;
-
   @useResult
   $Res call({String uid, String? value, int? position});
 }
@@ -1314,15 +1296,11 @@ abstract class OnNext extends FormIntent {
       {required final String uid,
       final String? value,
       final int? position}) = _$OnNext;
-
   const OnNext._() : super._();
 
   String get uid;
-
   String? get value;
-
   int? get position;
-
   @JsonKey(ignore: true)
   _$$OnNextCopyWith<_$OnNext> get copyWith =>
       throw _privateConstructorUsedError;
@@ -1332,7 +1310,6 @@ abstract class OnNext extends FormIntent {
 abstract class _$$OnSaveCopyWith<$Res> {
   factory _$$OnSaveCopyWith(_$OnSave value, $Res Function(_$OnSave) then) =
       __$$OnSaveCopyWithImpl<$Res>;
-
   @useResult
   $Res call(
       {String uid, String? value, ValueType? valueType, String? fieldMask});
@@ -1582,17 +1559,12 @@ abstract class OnSave extends FormIntent {
       final String? value,
       final ValueType? valueType,
       final String? fieldMask}) = _$OnSave;
-
   const OnSave._() : super._();
 
   String get uid;
-
   String? get value;
-
   ValueType? get valueType;
-
   String? get fieldMask;
-
   @JsonKey(ignore: true)
   _$$OnSaveCopyWith<_$OnSave> get copyWith =>
       throw _privateConstructorUsedError;
@@ -1603,7 +1575,6 @@ abstract class _$$OnTextChangeCopyWith<$Res> {
   factory _$$OnTextChangeCopyWith(
           _$OnTextChange value, $Res Function(_$OnTextChange) then) =
       __$$OnTextChangeCopyWithImpl<$Res>;
-
   @useResult
   $Res call({String uid, String? value});
 }
@@ -1829,13 +1800,10 @@ class _$OnTextChange extends OnTextChange {
 abstract class OnTextChange extends FormIntent {
   const factory OnTextChange(final String uid, final String? value) =
       _$OnTextChange;
-
   const OnTextChange._() : super._();
 
   String get uid;
-
   String? get value;
-
   @JsonKey(ignore: true)
   _$$OnTextChangeCopyWith<_$OnTextChange> get copyWith =>
       throw _privateConstructorUsedError;
@@ -1846,7 +1814,6 @@ abstract class _$$ClearValueCopyWith<$Res> {
   factory _$$ClearValueCopyWith(
           _$ClearValue value, $Res Function(_$ClearValue) then) =
       __$$ClearValueCopyWithImpl<$Res>;
-
   @useResult
   $Res call({String uid});
 }
@@ -2063,11 +2030,9 @@ class _$ClearValue extends ClearValue {
 
 abstract class ClearValue extends FormIntent {
   const factory ClearValue(final String uid) = _$ClearValue;
-
   const ClearValue._() : super._();
 
   String get uid;
-
   @JsonKey(ignore: true)
   _$$ClearValueCopyWith<_$ClearValue> get copyWith =>
       throw _privateConstructorUsedError;
@@ -2079,7 +2044,6 @@ abstract class _$$SelectLocationFromCoordinatesCopyWith<$Res> {
           _$SelectLocationFromCoordinates value,
           $Res Function(_$SelectLocationFromCoordinates) then) =
       __$$SelectLocationFromCoordinatesCopyWithImpl<$Res>;
-
   @useResult
   $Res call({String uid, String? coordinates, String extraData});
 }
@@ -2321,15 +2285,11 @@ abstract class SelectLocationFromCoordinates extends FormIntent {
       {required final String uid,
       final String? coordinates,
       required final String extraData}) = _$SelectLocationFromCoordinates;
-
   const SelectLocationFromCoordinates._() : super._();
 
   String get uid;
-
   String? get coordinates;
-
   String get extraData;
-
   @JsonKey(ignore: true)
   _$$SelectLocationFromCoordinatesCopyWith<_$SelectLocationFromCoordinates>
       get copyWith => throw _privateConstructorUsedError;
@@ -2340,7 +2300,6 @@ abstract class _$$SelectLocationFromMapCopyWith<$Res> {
   factory _$$SelectLocationFromMapCopyWith(_$SelectLocationFromMap value,
           $Res Function(_$SelectLocationFromMap) then) =
       __$$SelectLocationFromMapCopyWithImpl<$Res>;
-
   @useResult
   $Res call({String uid, String featureType, String? coordinates});
 }
@@ -2581,15 +2540,11 @@ abstract class SelectLocationFromMap extends FormIntent {
       {required final String uid,
       required final String featureType,
       final String? coordinates}) = _$SelectLocationFromMap;
-
   const SelectLocationFromMap._() : super._();
 
   String get uid;
-
   String get featureType;
-
   String? get coordinates;
-
   @JsonKey(ignore: true)
   _$$SelectLocationFromMapCopyWith<_$SelectLocationFromMap> get copyWith =>
       throw _privateConstructorUsedError;
@@ -2600,7 +2555,6 @@ abstract class _$$SaveCurrentLocationCopyWith<$Res> {
   factory _$$SaveCurrentLocationCopyWith(_$SaveCurrentLocation value,
           $Res Function(_$SaveCurrentLocation) then) =
       __$$SaveCurrentLocationCopyWithImpl<$Res>;
-
   @useResult
   $Res call({String uid, String? value, String featureType});
 }
@@ -2840,15 +2794,11 @@ abstract class SaveCurrentLocation extends FormIntent {
       {required final String uid,
       final String? value,
       required final String featureType}) = _$SaveCurrentLocation;
-
   const SaveCurrentLocation._() : super._();
 
   String get uid;
-
   String? get value;
-
   String get featureType;
-
   @JsonKey(ignore: true)
   _$$SaveCurrentLocationCopyWith<_$SaveCurrentLocation> get copyWith =>
       throw _privateConstructorUsedError;
@@ -2859,7 +2809,6 @@ abstract class _$$OnSectionCopyWith<$Res> {
   factory _$$OnSectionCopyWith(
           _$OnSection value, $Res Function(_$OnSection) then) =
       __$$OnSectionCopyWithImpl<$Res>;
-
   @useResult
   $Res call({String sectionUid});
 }
@@ -3077,11 +3026,9 @@ class _$OnSection extends OnSection {
 
 abstract class OnSection extends FormIntent {
   const factory OnSection(final String sectionUid) = _$OnSection;
-
   const OnSection._() : super._();
 
   String get sectionUid;
-
   @JsonKey(ignore: true)
   _$$OnSectionCopyWith<_$OnSection> get copyWith =>
       throw _privateConstructorUsedError;
@@ -3092,7 +3039,6 @@ abstract class _$$OnRequestCoordinatesCopyWith<$Res> {
   factory _$$OnRequestCoordinatesCopyWith(_$OnRequestCoordinates value,
           $Res Function(_$OnRequestCoordinates) then) =
       __$$OnRequestCoordinatesCopyWithImpl<$Res>;
-
   @useResult
   $Res call({String uid});
 }
@@ -3310,11 +3256,9 @@ class _$OnRequestCoordinates extends OnRequestCoordinates {
 
 abstract class OnRequestCoordinates extends FormIntent {
   const factory OnRequestCoordinates(final String uid) = _$OnRequestCoordinates;
-
   const OnRequestCoordinates._() : super._();
 
   String get uid;
-
   @JsonKey(ignore: true)
   _$$OnRequestCoordinatesCopyWith<_$OnRequestCoordinates> get copyWith =>
       throw _privateConstructorUsedError;
@@ -3326,7 +3270,6 @@ abstract class _$$OnCancelRequestCoordinatesCopyWith<$Res> {
           _$OnCancelRequestCoordinates value,
           $Res Function(_$OnCancelRequestCoordinates) then) =
       __$$OnCancelRequestCoordinatesCopyWithImpl<$Res>;
-
   @useResult
   $Res call({String uid});
 }
@@ -3546,11 +3489,9 @@ class _$OnCancelRequestCoordinates extends OnCancelRequestCoordinates {
 abstract class OnCancelRequestCoordinates extends FormIntent {
   const factory OnCancelRequestCoordinates({required final String uid}) =
       _$OnCancelRequestCoordinates;
-
   const OnCancelRequestCoordinates._() : super._();
 
   String get uid;
-
   @JsonKey(ignore: true)
   _$$OnCancelRequestCoordinatesCopyWith<_$OnCancelRequestCoordinates>
       get copyWith => throw _privateConstructorUsedError;

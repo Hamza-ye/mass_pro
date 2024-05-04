@@ -17,9 +17,7 @@ final _privateConstructorUsedError = UnsupportedError(
 /// @nodoc
 mixin _$StoreResult {
   String get uid => throw _privateConstructorUsedError;
-
   ValueStoreResult? get valueStoreResult => throw _privateConstructorUsedError;
-
   String? get valueStoreResultMessage => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
@@ -32,7 +30,6 @@ abstract class $StoreResultCopyWith<$Res> {
   factory $StoreResultCopyWith(
           StoreResult value, $Res Function(StoreResult) then) =
       _$StoreResultCopyWithImpl<$Res, StoreResult>;
-
   @useResult
   $Res call(
       {String uid,
@@ -47,7 +44,6 @@ class _$StoreResultCopyWithImpl<$Res, $Val extends StoreResult>
 
   // ignore: unused_field
   final $Val _value;
-
   // ignore: unused_field
   final $Res Function($Val) _then;
 
@@ -81,7 +77,6 @@ abstract class _$$_StoreResultCopyWith<$Res>
   factory _$$_StoreResultCopyWith(
           _$_StoreResult value, $Res Function(_$_StoreResult) then) =
       __$$_StoreResultCopyWithImpl<$Res>;
-
   @override
   @useResult
   $Res call(
@@ -170,18 +165,14 @@ abstract class _StoreResult extends StoreResult {
       {required final String uid,
       final ValueStoreResult? valueStoreResult,
       final String? valueStoreResultMessage}) = _$_StoreResult;
-
   const _StoreResult._() : super._();
 
   @override
   String get uid;
-
   @override
   ValueStoreResult? get valueStoreResult;
-
   @override
   String? get valueStoreResultMessage;
-
   @override
   @JsonKey(ignore: true)
   _$$_StoreResultCopyWith<_$_StoreResult> get copyWith =>
